@@ -7,4 +7,3 @@ This warehouse follows a classic star schema:
 - No dimension-to-dimension joins
 
 This minimizes query complexity and improves performance.
-```
