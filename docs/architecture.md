@@ -8,4 +8,3 @@ This warehouse follows a classic star schema:
 
 This minimizes query complexity and improves performance.
 ```
-docs/performance.md
