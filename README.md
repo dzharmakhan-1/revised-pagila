@@ -229,14 +229,14 @@ Shows how the star schema supports multi-dimensional slicing.
 #### 2. Monthly Revenue Aggregation
 Demonstrates time-based aggregation using the date dimension.
 
-![Example Query 2](screenshots/example_query3.png)
+![Example Query 2](screenshots/example_query1.png)
 
 ---
 
 #### 3. Revenue by Category
 Shows category-level performance analysis.
 
-![Example Query 3](screenshots/example_query1.png)
+![Example Query 3](screenshots/example_query3.png)
 
 ---
 
