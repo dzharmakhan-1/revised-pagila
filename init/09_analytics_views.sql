@@ -5,6 +5,28 @@
 
 SET search_path TO analytics, public;
 
+DROP VIEW IF EXISTS analytics.v_revenue_daily CASCADE;
+
+CREATE VIEW analytics.v_revenue_daily AS
+SELECT
+  f.date_id,
+  d.year,
+  d.quarter,
+  d.month,
+  d.month_name,
+  d.week,
+  d.day_name,
+  SUM(f.revenue_amount) AS total_revenue,
+  COUNT(*)              AS fact_rows
+FROM analytics.fact_revenue f
+JOIN analytics.dim_date d
+  ON d.date_id = f.date_id
+GROUP BY
+  f.date_id, d.year, d.quarter, d.month, d.month_name, d.week, d.day_name
+ORDER BY
+  f.date_id;
+
+
 -- -----------------------------
 -- Revenue by day
 -- -----------------------------
