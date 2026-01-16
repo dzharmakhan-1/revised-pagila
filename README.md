@@ -265,7 +265,7 @@ Screenshots of their execution and results are provided in the `screenshots/` fo
 ---
 
 ### 1. Monthly Revenue by Geography and Film Category
-*![Query1](screenshots/example_query1.png)*
+*![Query1](screenshots/example_query3.png)*
 
 This query shows how different film categories perform in each country over time.
 
@@ -299,7 +299,7 @@ ORDER BY
 ```
 
 ### 2. Monthly Revenue Trend by Film Category
-*![Query2](screenshots/example_query2.png)*
+*![Query2](screenshots/example_query1.png)*
 
 This query focuses on time and category only, ignoring geography.
 
@@ -332,7 +332,7 @@ ORDER BY
 ```
 
 ### 3. Revenue by Geography and Film Category
-*![Query3](screenshots/example_query3.png)*
+*![Query3](screenshots/example_query2.png)*
 
 This query compares category performance across different countries.
 
