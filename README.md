@@ -149,7 +149,7 @@ This will validate:
 ## How the ETL/ELT Works
 All transformations run automatically during PostgreSQL container initialization.
 
-1. **Load source**: Pagila schema and sample data are created.
+1. **Load source**: Pagila schema and sample data are created. Automatically creates public schema that can be used to extract data from the main data.
 2. **Create analytics schema**: Separate `analytics` schema isolates warehouse objects.
 3. **Build dimensions**: `dim_date`, `dim_category`, `dim_store`, `dim_geography`.
 4. **Build fact**: `fact_revenue` aggregates payments at the defined grain.
